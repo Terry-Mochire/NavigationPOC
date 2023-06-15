@@ -15,3 +15,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "Navigation"
 include(":app")
+include(":feature:authentication")
