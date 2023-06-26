@@ -13,12 +13,13 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.NavHostController
+import com.example.feature.authentication.commons.Navigation
 
-@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun LoginScreen(
     navHostController: NavHostController
 ) {
+    Navigation()
     Scaffold {
         Box(
             modifier = Modifier
@@ -28,7 +29,9 @@ fun LoginScreen(
         ){
             Column {
                 Text(text = "Login Screen")
-                Button(onClick = { /*TODO*/ }) {
+                Button(onClick = {
+                    navHostController.navigate("welcome")
+                }) {
                   Text(text = "Login")
                 }
             }

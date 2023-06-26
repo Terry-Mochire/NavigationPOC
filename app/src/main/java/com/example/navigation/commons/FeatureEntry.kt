@@ -7,6 +7,7 @@ import androidx.navigation.NavGraphBuilder
 import androidx.navigation.NavHostController
 import androidx.navigation.NamedNavArgument
 import androidx.navigation.compose.composable
+import org.reflections.Reflections
 
 interface FeatureEntry {
     val name: String
